@@ -16,6 +16,8 @@ import Movie from "./pages/Movies/Movie";
 import Booking from "./pages/Movies/Booking";
 import MyBookings from "./pages/Movies/MyBookings";
 
+import Error from "./components/UI/Error/Error";
+
 import AuthContextProvider from "./components/shared/Providers/AuthContextProvider";
 import ToastContextProvider from './components/shared/Providers/ToastContextProvider';
 
@@ -73,6 +75,10 @@ const router = createBrowserRouter([
         path: 'profile',
         element: <AuthProtection element={ <Profile /> } />
       },
+      {
+        path: '*',
+        element: <Error message="Page Not Found!" marginTop="5rem" />
+      }
     ]
   }
 ]);
