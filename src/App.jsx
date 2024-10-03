@@ -77,7 +77,7 @@ const router = createBrowserRouter([
       },
       {
         path: '*',
-        element: <Error message="Page Not Found!" marginTop="5rem" />
+        element: <Error message="Page Not Found!" marginTop="6rem" />
       }
     ]
   }
