@@ -1,0 +1,83 @@
+.signup-form{
+    width:78%;
+    /* border:1px solid red; */
+    margin:auto;
+    margin-top: 0.5rem;
+}
+
+.signup-form form{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.role-container{
+    width:100%;
+    margin-bottom:1rem;
+}
+
+.role-header{
+    font-size: 1rem;
+    color:rgb(44, 32, 75);
+}
+
+.role-items{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top:10px;
+}
+
+.role-item{
+    margin-right:25px;
+    color: rgb(86, 58, 143);
+}
+
+.role-item label{
+    font-size:15px;
+    margin-left:3px;
+    cursor: pointer;
+}
+
+.role-item input{
+    font-size:15px;
+    cursor: pointer;
+}
+
+.role-item input:checked{
+    accent-color: rgb(86, 58, 143);
+}
+
+.signup-btn{
+    border:none;
+    width:98%;
+    padding:10px 0;
+    margin-top:5px;
+    font-size:17px;
+    background: rgb(160, 141, 185);
+    color:black;
+    transition: background 0.1s, color 0.1s;
+}
+
+.signup-btn:hover{
+    background: rgb(71, 50, 101);
+    color:rgb(228, 229, 255);
+}
+
+.login-text{
+    margin-top:1.5rem;
+    text-align: center;
+}
+
+.login-link{
+    margin-left:5px;
+    color:rgb(50, 82, 112);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login-link:hover{
+    color:rgb(0, 115, 255);
+}

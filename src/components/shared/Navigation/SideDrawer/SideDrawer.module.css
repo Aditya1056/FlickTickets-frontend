@@ -1,0 +1,41 @@
+.side-drawer{
+    width:85%;
+    height:100vh;
+    padding:15px;
+    box-sizing: border-box;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:35;
+    background:rgb(19, 19, 44);
+    overflow: auto;
+}
+
+.drawer-closer{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.close-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    background: transparent;
+    font-size:2rem;
+    padding:5px;
+    border-radius:5px;
+    transition:0.1s background, 0.1s color;
+    cursor: pointer;
+    color:white;
+}
+
+.close-btn:hover{
+    background:rgb(215, 199, 249);
+    color:black;
+}

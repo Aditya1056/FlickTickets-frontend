@@ -1,0 +1,129 @@
+.user-profile{
+    width:50%;
+    margin:auto;
+    box-sizing: border-box;
+    margin-top:2rem;
+    padding:2rem 0.5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(18, 22, 39);
+    border-radius: 10px;
+}
+
+.user-profile h2{
+    width:100%;
+    text-align: center;
+    color:rgb(181, 192, 251);
+}
+
+.user-image{
+    /* border:1px solid red; */
+    margin:15px auto;
+    width:150px;
+    height:150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background: rgb(228, 240, 255);
+}
+
+.user-image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.profile-actions{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.pic-change-btn, .upload-btn, .cancel-btn, .submit-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 30px;
+    border:1px solid transparent;
+    background: transparent;
+    transition:0.15s background, 0.15s color;
+}
+
+.edit-icon{
+    margin-right:5px;
+    font-size:18px;
+}
+
+.pic-change-btn{
+    border-color: rgb(124, 157, 231);
+    color:white;
+    font-size:15px;
+}
+
+.pic-change-btn:hover{
+    background: rgb(36, 76, 142);
+}
+
+.upload-btn{
+    color:white;
+    border-color:rgb(181, 190, 238);
+    font-size:20px;
+    padding:7px 25px;
+}
+
+.upload-btn:hover{
+    background: rgb(78, 77, 118);
+}
+
+.cancel-btn{
+    color:white;
+    border-color:rgb(67, 121, 146);
+    font-size:15px;
+    padding-left:35px;
+    padding-right:35px;
+}
+
+.cancel-btn:hover{
+    background: rgb(46, 85, 103);
+}
+
+.submit-btn{
+    color:white;
+    border-color:rgb(125, 62, 32);
+    font-size:15px;
+    padding-left:35px;
+    padding-right:35px;
+}
+
+.submit-btn:hover{
+    background: rgb(99, 52, 26);
+}
+
+.user-details{
+    width:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:17px;
+    color:rgb(138, 180, 212);
+}
+
+.user-details p{
+    margin:6px auto;
+}
+
+@media(max-width:980px){
+    .user-profile{
+        width:90%;
+    }
+}

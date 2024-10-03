@@ -1,0 +1,102 @@
+.theatre-form-container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:30;
+    background:rgba(0, 0, 0, 0.6);
+}
+
+.theatre-form{
+    width:45%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    padding:15px 20px;
+    border-radius:10px;
+}
+
+.theatre-form-header{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theatre-form-header h4{
+    margin:6px auto;
+    color:rgb(54, 59, 87);
+}
+
+.form-closer{
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.close-btn{
+    border:1px solid transparent;
+    font-size:22px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+    padding:5px;
+    background: transparent;
+    color:grey;
+    transition:0.15s border-color, 0.15s color;
+}
+
+.close-btn:hover{
+    border-color:black;
+    color:black;
+}
+
+.theatre-form form{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-actions{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:10px auto;
+}
+
+.submit-btn{
+    width:100%;
+    padding-top:8px;
+    padding-bottom:8px;
+    margin-top:10px;
+    border:none;
+    font-size:16px;
+    background:rgb(191, 188, 236);
+    color:black;
+    transition:0.15s background, 0.15s color;
+}
+
+.submit-btn:hover{
+    background:rgb(52, 50, 74);
+    color:rgb(244, 249, 255);
+}
+
+
+@media(max-width:980px){
+    .theatre-form{
+        width:90%;
+    }
+}

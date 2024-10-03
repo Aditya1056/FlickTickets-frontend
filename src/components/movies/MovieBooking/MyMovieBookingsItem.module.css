@@ -1,0 +1,251 @@
+.booking-item{
+    width:90%;
+    height:150px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(192, 199, 220);
+    color:black;
+    border-radius:10px;
+    overflow: hidden;
+}
+
+.movie-poster{
+    width:25%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-poster img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.theatre-details{
+    width:50%;
+    height:100%;
+    box-sizing: border-box;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* border:1px solid red; */
+}
+
+.theatre-details-header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.theatre-info{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.payment-details{
+    width:25%;
+    height:100%;
+    box-sizing: border-box;
+    padding:6px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-left:2px solid rgb(126, 139, 160);
+}
+
+.movie-title, .show-time{
+    width:40%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:rgb(55, 43, 75);
+    /* border:1px solid red; */
+}
+
+.show-time{
+    width:55%;
+    font-size:14.5px;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.theatre-name{
+    width:100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:rgb(52, 59, 85);
+    margin-top:10px;
+
+}
+
+.theatre-address{
+    width:100%;
+    color:rgb(52, 59, 85);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top:5px;
+    font-size:12px;
+    /* border:1px solid red; */
+}
+
+.theatre-seats{
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:5px;
+    margin-top:10px;
+}
+
+.theatre-seats span{
+    font-weight: 600;
+    font-size:15px;
+    color:rgb(28, 40, 56);
+}
+
+
+.theatre-seats p{
+    font-size:15px;
+    color:rgb(29, 32, 62);
+}
+
+.paid-amount, .paid-date{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size:14px;
+}
+
+.paid-amount{
+    background-color: rgb(75, 77, 117);
+    color:white;
+    border-radius:3px;
+}
+
+.paid-date{
+    color:rgb(22, 43, 52);
+}
+
+.transaction{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:14px;
+    color:rgb(22, 43, 52);
+}
+
+.transaction-id-heading{
+    width:100%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.transaction-id{
+    width:100%;
+    margin-top:3px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media(max-width:980px){
+    .booking-item{
+        height:auto;
+        flex-direction: column;
+    }
+
+    .movie-poster{
+        width:100%;
+        height:120px;
+    }
+
+    .theatre-details{
+        width:100%;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .theatre-details-header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .movie-title{
+        width:100%;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .show-time{
+        width:100%;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+        margin-top:5px;
+    }
+
+    .theatre-info{
+        width:100%;
+        height:auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .theatre-name, .theatre-address{
+        text-align: center;
+    }
+
+    .theatre-seats{
+        width:100%;
+        height:auto;
+        justify-content: center;
+    }
+
+    .payment-details{
+        width:100%;
+        height:auto;
+        justify-content: center;
+        align-content: center;
+        border-left:none;
+    }
+
+    .transaction{
+        margin-top:10px;
+    }
+
+    .paid-date{
+        margin-top:10px;
+    }
+}
+
+

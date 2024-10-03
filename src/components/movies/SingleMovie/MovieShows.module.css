@@ -1,0 +1,72 @@
+.movie-shows-info{
+    width:70%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border:1px solid rgb(14, 114, 109); */
+    margin-top:3rem;
+}
+
+.movie-shows{
+    width:100%;
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    display:center;
+    align-items: center;
+}
+
+.theatre-shows-container{
+    width:100%;
+    /* border:1px solid red; */
+}
+
+.theatre-shows{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.theatre-info{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.theatre-info h4{
+    color:rgb(45, 41, 56);
+}
+
+.theatre-info p{
+    font-size:12px;
+    margin-top:5px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    color:rgb(26, 47, 71);
+}
+
+.location-icon{
+    margin-right:3px;
+    color:rgb(148, 100, 79);
+}
+
+.breaker{
+    width:100%;
+    height:5px;
+    border-radius:5px;
+    background-color:rgba(40, 58, 95, 0.15);
+    margin:2rem auto;
+}
+
+@media (max-width:980px){
+
+    .movie-shows-info{
+       width:90%;
+    }
+}

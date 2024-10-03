@@ -1,0 +1,110 @@
+.movie-container{
+    width:100%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:2rem;
+    margin-bottom:5rem;
+}
+
+.movie-poster{
+    width:500px;
+    height:300px;
+    border-radius:10px;
+    overflow: hidden;
+}
+
+.movie-poster img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.movie-info{
+    width:70%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:1rem;
+}
+
+.movie-info p{
+    margin-top:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-info p span{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-right:7px;
+}
+
+.movie-info h3{
+    color:rgb(41, 41, 89);
+    font-size:20px;
+}
+
+.movie-description{
+    font-size: 15px;
+    color:rgb(45, 47, 65);
+}
+
+.movie-duration span{
+    color:rgb(6, 80, 114);
+}
+
+.movie-certificate span{
+    color:rgb(133, 94, 21);
+}
+
+.time-icon{
+    margin-right:5px;
+    font-size:16px;
+}
+
+.certificate-icon{
+    margin-right:5px;
+    font-size:17px;
+}
+
+.movie-genres span, .movie-release-date span{
+    color:rgb(55, 32, 82);
+}
+
+.breaker{
+    width:80%;
+    height:5px;
+    border-radius:5px;
+    background-color:rgba(40, 58, 95, 0.2);
+    margin:1.5rem auto;
+}
+
+.movie-shows-container{
+    width:75%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:1rem;
+}
+
+.fallback-text{
+    width:100%;
+    text-align: center;
+    font-size:15px;
+    margin-top:3rem;
+}
+
+@media (max-width:980px){
+    .movie-poster{
+        width:85%;
+    }
+}

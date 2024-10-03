@@ -1,0 +1,33 @@
+.available-languages{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top:2rem;
+}
+
+.language-option{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    border:1px solid rgb(53, 62, 88);
+    color: rgb(46, 49, 82);
+    background: none;
+    font-size:12px;
+    transition: 0.15s background, 0.15s color, 0.15s transform;
+}
+
+.language-option:hover{
+    color:white;
+    background: rgba(47, 50, 75, 0.7);
+}
+
+.language-option.selected{
+    background: rgb(47, 50, 75);
+    color: white;
+    transform: scale(1.05);
+}

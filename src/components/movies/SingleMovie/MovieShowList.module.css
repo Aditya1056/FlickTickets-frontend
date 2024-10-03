@@ -1,0 +1,11 @@
+.movie-show-list{
+    list-style-type: none;
+    /* border:1px solid red; */
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    margin-top:1.5rem;
+}

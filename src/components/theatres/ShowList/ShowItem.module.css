@@ -1,0 +1,113 @@
+.show-item{
+    width:100%;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+    gap:1rem;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.show-date, .show-movie, .show-language, .show-start, .show-end, .show-ticket-price, .show-total-seats, .show-booked-seats, .show-actions{
+    flex:1;
+    box-sizing: border-box;
+    padding:6px 8px;
+    background-color:rgb(207, 217, 228);
+    color:rgb(1, 8, 20);
+    border-radius:5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-date, .show-movie{
+    flex:2;
+}
+
+.show-actions{
+    flex-direction: column;
+}
+
+.show-date p, .show-movie p, .show-language p, .show-start p, .show-end p, .show-ticket-price p, .show-total-seats p, .show-booked-seats p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-date p span, .show-movie p span, .show-language p span, .show-start p span, .show-end p span, .show-ticket-price p span, .show-total-seats p span, .show-booked-seats p span{
+    margin-right:7px;
+    display:none;
+}
+
+.show-date p, .show-start p, .show-end p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.delete-btn, .edit-btn{
+    border:1px solid transparent;
+    font-size:15px;
+    padding:5px 10px;
+    background: transparent;
+    transition:0.15s background, 0.15s color;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-btn{
+    border-color:rgb(221, 48, 21);
+    margin-top:7px;
+    color:rgb(127, 60, 60);
+}
+
+.delete-btn:hover{
+    background: rgba(140, 58, 58, 0.8);
+    color:white;
+}
+
+.edit-btn{
+    border-color:rgb(225, 147, 0);
+    color:rgb(129, 80, 31);
+}
+
+.edit-btn:hover{
+    background: rgb(191, 123, 4);
+    color:white;
+}
+
+.edit-icon{
+    margin-left:5px;
+    font-size:14px;
+}
+
+.delete-icon{
+    margin-left:5px;
+    font-size:17px;
+}
+
+@media(max-width:980px){
+
+    .show-item{
+        /* border:1px solid red; */
+        padding:10px;
+        flex-direction: column;
+        background-color: rgb(207, 217, 228);
+        border-radius:10px;
+    }
+
+    .show-date, .show-movie, .show-language, .show-start, .show-end, .show-ticket-price, .show-total-seats, .show-booked-seats, .show-actions{
+        background-color: transparent;
+    }
+
+    .show-movie p{
+        font-weight: 600;
+    }
+
+    .show-date p span, .show-movie p span, .show-language p span, .show-start p span, .show-end p span, .show-ticket-price p span, .show-total-seats p span, .show-booked-seats p span{
+        display:inline-block;
+        color:rgb(45, 34, 90);
+    }
+}

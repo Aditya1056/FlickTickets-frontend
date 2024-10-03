@@ -1,0 +1,193 @@
+.movie-item{
+    box-sizing: border-box;
+    width:100%;
+    height:200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid red; */
+    border-radius:10px;
+    overflow: hidden;
+    margin:20px 0;
+    background-color: rgb(29, 34, 52);
+    color:white;
+    box-shadow: 0 0 5px rgb(32, 30, 52);
+}
+
+.movie-poster{
+    width:30%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid red; */
+}
+
+.movie-poster img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.movie-details{
+    box-sizing: border-box;
+    width:50%;
+    height:100%;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    /* border:1px solid red; */
+}
+
+.movie-title{
+    color:rgb(231, 231, 255);
+}
+
+.movie-description{
+    width:100%;
+    font-size: 14px;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:rgb(210, 214, 245);
+}
+
+.movie-duration-genres, .movie-certificate-languages{
+    width:100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.movie-genres, .movie-languages, .movie-certificate, .movie-duration{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size:14.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.movie-genres, .movie-languages{
+    margin-left:16px;
+    color:rgb(210, 214, 245);
+}
+
+.movie-duration{
+    color:rgb(129, 201, 250);
+}
+
+.movie-certificate{
+    color:rgb(250, 195, 122);
+}
+
+.movie-certificate.safe{
+    color:rgb(105, 203, 70);
+}
+
+.movie-certificate.warning{
+    color:rgb(255, 137, 121);
+}
+
+.time-icon, .certificate-icon, .language-icon{
+    margin-right:5px;
+    font-size:16px;
+}
+
+.language-icon{
+    font-size:17px;
+    padding:1.5px;
+    /* border:1px solid red; */
+}
+
+.movie-actions{
+    width:20%;
+    height:100%;
+    /* border:1px solid blue; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.booking-btn, .edit-btn, .delete-btn{
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid transparent;
+    padding:10px 0px;
+    font-size:15px;
+    background: transparent;
+    transition: 0.15s background;
+}
+
+.booking-btn{
+    border-color: rgb(235, 44, 44);
+    color:white
+}
+
+.booking-btn:hover{
+    background: rgb(235, 44, 44);
+}
+
+.edit-btn{
+    border-color: rgb(36, 116, 186);
+    color:white;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.edit-btn:hover{
+    background: rgb(36, 116, 186);
+}
+
+.delete-btn{
+    border-color: rgb(245, 152, 152);
+    color:white;
+}
+
+.delete-btn:hover{
+    background: rgb(127, 80, 80);
+}
+
+.edit-icon{
+    margin-left:5px;
+    font-size:17px;
+}
+
+.delete-icon{
+    margin-left:5px;
+    font-size:17px;
+}
+
+@media(max-width:980px){
+    .movie-item{
+        width:100%;
+        flex-direction: column;
+        height:auto;
+    }
+
+    .movie-poster{
+        width:100%;
+        height:200px;
+    }
+
+    .movie-details{
+        width:100%;
+        margin-top:10px;
+    }
+
+    .movie-actions{
+        width:100%;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+}

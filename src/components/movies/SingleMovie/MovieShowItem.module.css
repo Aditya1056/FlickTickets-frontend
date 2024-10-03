@@ -1,0 +1,42 @@
+.show-time{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:14px;
+    border:1px solid rgb(31, 150, 31);
+    color:rgb(40, 121, 11);
+    padding:7px 10px;
+    background: transparent;
+    transition: 0.15s box-shadow;
+}
+
+.show-time:hover{
+    box-shadow:inset 0 0 6px rgb(48, 136, 21);
+}
+
+.show-time.filling{
+    border:1px solid rgb(155, 149, 43);
+    color:rgb(134, 116, 4);
+}
+
+.show-time.filling:hover{
+    box-shadow:inset 0 0 6px rgb(157, 134, 5);
+}
+
+.show-time.fast-filling{
+    border:1px solid rgb(194, 82, 12);
+    color:rgb(208, 101, 13);
+}
+
+.show-time.fast-filling:hover{
+    box-shadow:inset 0 0 6px rgb(207, 96, 16);
+}
+
+.show-time.filled{
+    border:1px solid rgb(215, 33, 33);
+    color:rgb(171, 20, 20);
+}
+
+.show-time.filled:hover{
+    box-shadow: inset 0 0 6px rgb(191, 32, 32);
+}

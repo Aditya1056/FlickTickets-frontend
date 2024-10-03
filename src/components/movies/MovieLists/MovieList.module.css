@@ -1,0 +1,9 @@
+.movie-list-container{
+    width:100%;
+}
+
+.movies-list{
+    list-style-type: none;
+    /* border:1px solid red; */
+    margin-top: 3rem;
+}

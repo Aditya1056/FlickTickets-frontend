@@ -1,0 +1,36 @@
+.pagination{
+    box-sizing: border-box;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 5px;
+    margin-top:15px;
+}
+
+.backward-arrow-btn, .forward-arrow-btn, .previous-page-btn, .current-page-btn, .next-page-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:15px;
+    padding:8px 12px;
+    margin-left:5px;
+    margin-right:5px;
+    border:none;
+    background: rgb(225, 228, 236);
+    box-shadow: 0.5px 0.5px 2px rgb(62, 62, 99), -0.5px 0px 2px rgb(62, 62, 99);
+    transition: 0.15s background, 0.15s color;
+}
+
+.current-page-btn{
+    background: rgb(69, 63, 105);
+    color:white;
+}
+
+.forward-arrow-icon, .backward-arrow-icon{
+    font-size:16px;
+}
+
+.backward-arrow-btn:hover, .forward-arrow-btn:hover, .previous-page-btn:hover, .next-page-btn:hover{
+    background: rgba(133, 142, 176, 0.5);
+}

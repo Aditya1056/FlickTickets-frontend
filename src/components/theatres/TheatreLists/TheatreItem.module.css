@@ -1,0 +1,170 @@
+.theatre-item{
+    width:100%;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+    gap:1rem;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.theatre-name, .theatre-owner, .theatre-phone, .theatre-info, .theatre-address, .theatre-actions, .theatre-status{
+    flex:1;
+    box-sizing: border-box;
+    padding:6px 8px;
+    background-color:rgb(207, 217, 228);
+    color:rgb(1, 8, 20);
+    border-radius:5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theatre-address{
+    flex:2;
+}
+
+.theatre-actions{
+    flex-direction: column;
+}
+
+.theatre-name p, .theatre-address p, .theatre-owner p, .theatre-phone p, .theatre-status p{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theatre-phone p, .theatre-owner p{
+    overflow: hidden;
+}
+
+.theatre-owner p img{
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    margin-right:5px;
+}
+
+.phone-icon{
+    margin-right:5px;
+    color:rgb(27, 80, 116);
+    display:none;
+}
+
+.location-icon{
+    margin-right:5px;
+    color:rgb(170, 119, 0);
+    display:none;
+}
+
+.active-icon{
+    margin-right:5px;
+    color:rgb(34, 197, 34);
+}
+
+.pending-icon{
+    margin-right:5px;
+    color:rgb(227, 128, 46);
+}
+
+.approve-btn, .decline-btn, .edit-btn{
+    border:1px solid transparent;
+    font-size:15px;
+    padding:5px 10px;
+    background: transparent;
+    transition:0.15s background, 0.15s color;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.approve-btn{
+    border-color:rgb(24, 144, 24);
+    color:rgb(17, 95, 17);
+}
+
+.approve-btn:hover{
+    background: rgba(59, 132, 59, 0.8);
+    color:white;
+}
+
+.decline-btn{
+    border-color:rgb(221, 48, 21);
+    margin-top:7px;
+    color:rgb(127, 60, 60);
+}
+
+.decline-btn:hover{
+    background: rgba(140, 58, 58, 0.8);
+    color:white;
+}
+
+.edit-btn{
+    border-color:rgb(225, 147, 0);
+    color:rgb(129, 80, 31);
+}
+
+.edit-btn:hover{
+    background: rgb(191, 123, 4);
+    color:white;
+}
+
+.approve-icon{
+    margin-left:5px;
+    font-size:16px;
+}
+
+.decline-icon{
+    margin-left:5px;
+    font-size:17px;
+}
+
+.edit-icon{
+    margin-left:5px;
+    font-size:14px;
+}
+
+.delete-icon{
+    margin-left:5px;
+    font-size:17px;
+}
+
+.info-btn{
+    width:100%;
+    border:none;
+    background: transparent;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:19px;
+    color:rgb(71, 110, 179);
+    transition: 0.15s color;
+}
+
+.info-btn:hover{
+    color:rgb(20, 35, 72);
+}
+
+@media(max-width:980px){
+
+    .theatre-item{
+        /* border:1px solid red; */
+        padding:10px;
+        flex-direction: column;
+        background-color: rgb(207, 217, 228);
+        border-radius:10px;
+    }
+
+    .theatre-name, .theatre-owner, .theatre-phone, .theatre-info, .theatre-address, .theatre-actions, .theatre-status{
+        background-color: transparent;
+    }
+
+    .phone-icon, .location-icon{
+        display:inline-block;
+    }
+
+    .theatre-name p{
+        font-weight: 600;
+    }
+}

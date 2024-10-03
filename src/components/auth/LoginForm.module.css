@@ -1,0 +1,48 @@
+.login-form{
+    width:78%;
+    /* border:1px solid red; */
+    margin:auto;
+    margin-top: 1rem;
+}
+
+.login-form form{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-btn{
+    border:none;
+    width:98%;
+    padding:10px 0;
+    margin-top:5px;
+    font-size:17px;
+    background: rgb(160, 141, 185);
+    color:black;
+    transition: background 0.1s, color 0.1s;
+}
+
+.login-btn:hover{
+    background: rgb(71, 50, 101);
+    color:rgb(228, 229, 255);
+}
+
+.sign-up-text, .forgot-password-text{
+    margin-top:1.5rem;
+    text-align: center;
+}
+
+.sign-up-link, .forgot-password-link{
+    margin-left:5px;
+    color:rgb(50, 82, 112);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sign-up-link:hover, .forgot-password-link:hover{
+    color:rgb(0, 115, 255);
+}
+
+

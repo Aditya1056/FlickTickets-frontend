@@ -1,0 +1,161 @@
+.nav-links{
+    height:100%;
+    list-style:none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navlink-dropdown{
+    width:150px;
+    /* border:1px solid red; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.selected-navlink{
+    /* width:100%; */
+    font-size:1.02rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid blue; */
+    color:white;
+    cursor: pointer;
+    transition:0.1s color;
+}
+
+.selected-navlink:hover{
+    color:rgb(174, 249, 209);
+}
+
+.arrow{
+    margin-left:5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlinks-display{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:100%;
+    left:0%;
+    background:rgb(62, 72, 99);
+    border-radius:5px;
+    margin-top:8px;
+}
+
+.navlinks-display a{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding-top:8px;
+    padding-bottom:8px;
+    color:white;
+    /* border:1px solid green; */
+    transition:0.1s background, 0.1s color;
+}
+
+.navlinks-display a:hover{
+    background:rgba(54, 200, 125, 0.15);
+}
+
+.navlinks-display a.active{
+    color:rgb(54, 200, 125);
+    box-shadow:inset 5px 0px 0 rgb(54, 200, 125);
+}
+
+.user-details a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.user-details a img{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    object-fit: cover;
+}
+
+.user-details a p{
+    max-width:200px;
+    margin-left:8px;
+    font-size: 16px;
+    color:white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition:0.1s color;
+}
+
+.user-details a:hover p{
+    color:rgb(174, 249, 209);
+}
+
+.user-details a.active p{
+    color:rgb(54, 200, 125);
+}
+
+.logout-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:20px;
+    border:none;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 17px;
+    padding:10px;
+    color:white;
+    cursor: pointer;
+    transition: 0.1s background, 0.1s color;
+}
+
+.logout-btn span{
+    display:none;
+}
+
+.logout-btn:hover{
+    background: rgb(233, 252, 242);
+    color:black;
+}
+
+@media(max-width:980px){
+
+    .nav-links{
+        height:auto;
+        flex-direction: column;
+    }
+
+    .navlink-dropdown{
+        border:1px solid red;
+    }
+
+    .user-details{
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+
+    .logout-btn span{
+        display:inline-block;
+        margin-right:5px;
+    }
+
+    .logout-btn{
+        margin-top:15px;
+        margin-bottom:15px;
+        border-radius:5px;
+    }
+}
